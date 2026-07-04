@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 Course Home Page | Chibueze Igbokwe</title>
+  <meta name="description" content="WDD 231 course home page for Chibueze Igbokwe, featuring course work, certificate courses, and responsive web design.">
+  <meta name="author" content="Chibueze Igbokwe">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="site-branding">
+      <img src="images/logo.svg" alt="Site logo" width="48" height="48">
+      <span>Chibueze Igbokwe</span>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu"></button>
+  </header>
+
+  <nav id="nav-menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="#">Chamber</a>
+    <a href="#">Final</a>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="main-grid">
+      <section class="card">
+        <h2>About Me</h2>
+        <p>
+          My name is Chibueze Igbokwe. I am a Chemical Engineer and HSE professional from Nigeria currently pursuing the Software Development certificate through BYU–Pathway. I enjoy building web applications, business software, and Unity games while expanding my skills in HTML, CSS, JavaScript, and modern software development.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Student Photo</h2>
+
+        <img
+            src="images/profile.jpg"
+            alt="Portrait of Chibueze Igbokwe"
+            class="profile-photo"
+            width="300"
+            height="400"
+        >
+      </section>
+    </div>
+
+    <section class="card certificate">
+      <h2>Web and Computer Programming Certificate</h2>
+
+      <div class="filter-buttons">
+        <button id="all">All Courses</button>
+        <button id="wdd">WDD Courses</button>
+        <button id="cse">CSE Courses</button>
+      </div>
+
+      <div id="course-list"></div>
+
+      <p class="credits">
+        Total Credits: <span id="total-credits">0</span>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/chibueze-igbokwe" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/chibueze-o-igbokwe" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <p>
+      &copy; <span id="currentyear"></span> Chibueze Igbokwe | Nigeria
+    </p>
+
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
