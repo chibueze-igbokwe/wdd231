@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Emzor Pharmaceutical Industries Ltd",
+    "address": "10 Kolawole Shonibare Street, Ajao Estate, Lagos",
+    "phone": "+234 803 000 1001",
+    "website": "https://www.emzorpharma.com",
+    "image": "emzor.jpg",
+    "membership": 3,
+    "industry": "Pharmaceutical Manufacturing"
+  },
+  {
+    "name": "First Bank of Nigeria",
+    "address": "35 Marina Road, Lagos Island, Lagos",
+    "phone": "+234 700 34778 2668228",
+    "website": "https://www.firstbanknigeria.com",
+    "image": "firstbank.png",
+    "membership": 3,
+    "industry": "Banking and Financial Services"
+  },
+  {
+    "name": "Konga Online Shopping Ltd",
+    "address": "Yudala Heights, Gbagada Expressway, Lagos",
+    "phone": "+234 806 000 2002",
+    "website": "https://www.konga.com",
+    "image": "konga.png",
+    "membership": 2,
+    "industry": "E-commerce"
+  },
+  {
+    "name": "Chicken Republic",
+    "address": "Victoria Island, Lagos",
+    "phone": "+234 805 000 3003",
+    "website": "https://www.chicken-republic.com",
+    "image": "chicken-republic.png",
+    "membership": 2,
+    "industry": "Food and Hospitality"
+  },
+  {
+    "name": "Slot Systems Limited",
+    "address": "Computer Village, Ikeja, Lagos",
+    "phone": "+234 809 000 4004",
+    "website": "https://www.slot.ng",
+    "image": "slot.png",
+    "membership": 1,
+    "industry": "Technology Retail"
+  },
+  {
+    "name": "Jumia Nigeria",
+    "address": "Lekki, Lagos",
+    "phone": "+234 802 000 5005",
+    "website": "https://www.jumia.com.ng",
+    "image": "jumia.png",
+    "membership": 3,
+    "industry": "E-commerce and Logistics"
+  },
+  {
+    "name": "Eko Hotel and Suites",
+    "address": "Plot 1415 Adetokunbo Ademola Street, Victoria Island, Lagos",
+    "phone": "+234 807 000 6006",
+    "website": "https://www.ekohotels.com",
+    "image": "eko-hotel.jpg",
+    "membership": 2,
+    "industry": "Hospitality"
+  }
+]
