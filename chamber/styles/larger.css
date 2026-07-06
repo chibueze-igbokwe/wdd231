@@ -22,6 +22,21 @@
     text-align: left;
     gap: 1rem;
   }
+
+  .home-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.spotlight-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.hero img {
+  max-height: 420px;
+  object-fit: cover;
+}
 }
 
 @media screen and (min-width: 1000px) {

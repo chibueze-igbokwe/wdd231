@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lagos Chamber of Commerce</title>
+  <meta name="description" content="Official home page for the Lagos Chamber of Commerce, connecting businesses, entrepreneurs, investors, and residents in Lagos, Nigeria.">
+  <meta name="author" content="Chibueze Igbokwe">
+
+  <meta property="og:title" content="Lagos Chamber of Commerce">
+  <meta property="og:description" content="Connecting businesses and driving economic growth across Lagos.">
+  <meta property="og:image" content="https://chibueze-igbokwe.github.io/wdd231/chamber/images/hero.jpg">
+  <meta property="og:url" content="https://chibueze-igbokwe.github.io/wdd231/chamber/">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="Lagos Chamber of Commerce logo" width="60" height="60">
+      <span>Lagos Chamber of Commerce</span>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu"></button>
+  </header>
+
+  <nav id="nav-menu">
+    <a href="index.html" class="active">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="#">Discover</a>
+    <a href="#">Join</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Lagos business district skyline" width="1200" height="500">
+      <a href="#" class="cta">Join the Chamber</a>
+    </section>
+
+    <h1>Lagos Chamber of Commerce</h1>
+
+    <div class="home-grid">
+      <section class="home-card events">
+        <h2>Current Events</h2>
+        <article>
+          <h3>Lagos Business Networking Forum</h3>
+          <p>Join local entrepreneurs, investors, and business leaders for networking and partnership opportunities.</p>
+        </article>
+
+        <article>
+          <h3>Small Business Growth Workshop</h3>
+          <p>Learn practical strategies for improving customer reach, digital marketing, and business operations.</p>
+        </article>
+      </section>
+
+      <section class="home-card weather">
+        <h2>Weather</h2>
+        <p><strong>Current Temperature:</strong> <span id="current-temp">Loading...</span></p>
+        <p><strong>Condition:</strong> <span id="weather-desc">Loading...</span></p>
+
+        <h3>3-Day Forecast</h3>
+        <div id="forecast"></div>
+      </section>
+    </div>
+
+    <section class="home-card">
+      <h2>Company Spotlights</h2>
+      <div id="spotlights" class="spotlight-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Lagos Chamber of Commerce</h2>
+      <p>10 Marina Road, Lagos Island, Lagos, Nigeria</p>
+      <p>Email: info@lagoschamber.example.com</p>
+      <p>Phone: +234 800 555 2310</p>
+    </section>
+
+    <section>
+      <p>&copy; <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+      <p>Chibueze Igbokwe | WDD 231</p>
+      <p id="lastModified"></p>
+    </section>
+  </footer>
+</body>
+</html>
