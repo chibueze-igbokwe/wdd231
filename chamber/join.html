@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Join Lagos Chamber of Commerce</title>
+  <meta name="description" content="Apply to join the Lagos Chamber of Commerce and select a membership level.">
+  <meta name="author" content="Chibueze Igbokwe">
+
+  <meta property="og:title" content="Join Lagos Chamber of Commerce">
+  <meta property="og:description" content="Become a member of the Lagos Chamber of Commerce.">
+  <meta property="og:image" content="https://chibueze-igbokwe.github.io/wdd231/chamber/images/hero.jpg">
+  <meta property="og:url" content="https://chibueze-igbokwe.github.io/wdd231/chamber/join.html">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="Lagos Chamber of Commerce logo" width="60" height="60">
+      <span>Lagos Chamber of Commerce</span>
+    </div>
+    <button id="menu" aria-label="Open navigation menu"></button>
+  </header>
+
+  <nav id="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="#">Discover</a>
+    <a href="join.html" class="active">Join</a>
+  </nav>
+
+  <main>
+    <h1>Join the Chamber</h1>
+
+    <div class="join-layout">
+      <section class="form-section">
+        <h2>Membership Application</h2>
+
+        <form method="get" action="thankyou.html">
+          <label>
+            First Name
+            <input type="text" name="first" title="Enter your first name" autocomplete="given-name" required>
+          </label>
+
+          <label>
+            Last Name
+            <input type="text" name="last" title="Enter your last name" autocomplete="family-name" required>
+          </label>
+
+          <label>
+            Organizational Title
+            <input type="text" name="title" title="Enter your organizational title. Only letters, spaces, and hyphens are allowed. Minimum 7 characters." autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+          </label>
+
+          <label>
+            Email Address
+            <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+          </label>
+
+          <label>
+            Mobile Phone
+            <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+          </label>
+
+          <label>
+            Business / Organization Name
+            <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+          </label>
+
+          <label>
+            Membership Level
+            <select name="membership" title="Select your membership level" required>
+              <option value="">Select a membership level</option>
+              <option value="np">NP Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label>
+            Business / Organization Description
+            <textarea name="description" title="Describe your business or organization" rows="5"></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <input type="submit" value="Submit Membership Application">
+        </form>
+      </section>
+
+      <section class="membership-section">
+        <h2>Membership Levels</h2>
+
+        <div class="membership-card">
+          <h3>NP Membership</h3>
+          <p>For nonprofit organizations.</p>
+          <button type="button" data-modal="np-modal">View Benefits</button>
+        </div>
+
+        <div class="membership-card">
+          <h3>Bronze Membership</h3>
+          <p>Basic business membership.</p>
+          <button type="button" data-modal="bronze-modal">View Benefits</button>
+        </div>
+
+        <div class="membership-card">
+          <h3>Silver Membership</h3>
+          <p>Expanded visibility and events.</p>
+          <button type="button" data-modal="silver-modal">View Benefits</button>
+        </div>
+
+        <div class="membership-card">
+          <h3>Gold Membership</h3>
+          <p>Premium chamber benefits.</p>
+          <button type="button" data-modal="gold-modal">View Benefits</button>
+        </div>
+      </section>
+    </div>
+
+    <dialog id="np-modal">
+      <h2>NP Membership Benefits</h2>
+      <p>No membership fee, nonprofit networking, community event listings, and chamber resource access.</p>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal">
+      <h2>Bronze Membership Benefits</h2>
+      <p>Business directory listing, member newsletter, basic networking events, and chamber updates.</p>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal">
+      <h2>Silver Membership Benefits</h2>
+      <p>Directory listing, event discounts, training access, advertising opportunities, and selected spotlight eligibility.</p>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal">
+      <h2>Gold Membership Benefits</h2>
+      <p>Premium directory placement, homepage spotlight eligibility, event sponsorship, priority training, and executive networking access.</p>
+      <button type="button" class="close-modal">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <section>
+      <h2>Lagos Chamber of Commerce</h2>
+      <p>10 Marina Road, Lagos Island, Lagos, Nigeria</p>
+      <p>Email: info@lagoschamber.example.com</p>
+      <p>Phone: +234 800 555 2310</p>
+    </section>
+
+    <section>
+      <p>&copy; <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+      <p>Chibueze Igbokwe | WDD 231</p>
+      <p id="lastModified"></p>
+    </section>
+  </footer>
+</body>
+</html>

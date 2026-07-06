@@ -37,6 +37,16 @@
   max-height: 420px;
   object-fit: cover;
 }
+
+
+.join-layout {
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+}
+
+.membership-section {
+  align-content: start;
+}
 }
 
 @media screen and (min-width: 1000px) {

@@ -266,3 +266,143 @@ footer p {
   color: #0f4c5c;
   font-weight: 700;
 }
+
+
+.join-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-section,
+.membership-section,
+.thankyou-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #777;
+  border-radius: 6px;
+  font: inherit;
+}
+
+input[type="submit"] {
+  background-color: #0f4c5c;
+  color: white;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #f4a261;
+  color: #111;
+}
+
+.membership-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.membership-card {
+  border: 1px solid #ccc;
+  border-left: 6px solid #0f4c5c;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f7f9fb;
+  animation: card-entry 0.8s ease-out both;
+}
+
+.membership-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.membership-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.membership-card h3 {
+  color: #0f4c5c;
+  margin-top: 0;
+}
+
+.membership-card button,
+.close-modal,
+.return-link {
+  display: inline-block;
+  background-color: #0f4c5c;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.membership-card button:hover,
+.close-modal:hover,
+.return-link:hover {
+  background-color: #f4a261;
+  color: #111;
+}
+
+dialog {
+  max-width: 420px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.thankyou-card {
+  max-width: 700px;
+  margin: 0 auto 1rem;
+}
+
+#submitted-info {
+  background-color: #f7f9fb;
+  border-left: 6px solid #0f4c5c;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+@keyframes card-entry {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
