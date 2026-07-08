@@ -406,3 +406,72 @@ dialog::backdrop {
     transform: translateY(0);
   }
 }
+
+.visitor-message,
+.discover-intro {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-left: 6px solid #0f4c5c;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.discover-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.discover-card h2 {
+  color: #0f4c5c;
+  font-size: 1.2rem;
+}
+
+.discover-card figure {
+  margin: 0;
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.discover-card address {
+  font-style: normal;
+  font-weight: 700;
+  margin: 0.75rem 0;
+}
+
+.discover-card button {
+  background-color: #0f4c5c;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.discover-card button:hover {
+  background-color: #f4a261;
+  color: #111;
+}

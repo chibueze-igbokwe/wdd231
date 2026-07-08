@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Thank You | Lagos Chamber of Commerce</title>
-  <meta name="description" content="Thank you page for Lagos Chamber of Commerce membership application.">
+  <title>Discover Lagos | Lagos Chamber of Commerce</title>
+  <meta name="description" content="Discover key business, cultural, and visitor attractions across Lagos, Nigeria.">
   <meta name="author" content="Chibueze Igbokwe">
+
+  <meta property="og:title" content="Discover Lagos">
+  <meta property="og:description" content="Explore business districts, cultural sites, and attractions that make Lagos a strong commercial center.">
+  <meta property="og:image" content="https://chibueze-igbokwe.github.io/wdd231/chamber/images/lagos-marina.webp">
+  <meta property="og:url" content="https://chibueze-igbokwe.github.io/wdd231/chamber/discover.html">
 
   <link rel="icon" href="images/favicon.ico">
 
@@ -20,7 +25,7 @@
 
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/dates.js" defer></script>
-  <script src="scripts/thankyou.js" defer></script>
+  <script src="scripts/discover.js" type="module"></script>
 </head>
 
 <body>
@@ -35,21 +40,27 @@
   <nav id="nav-menu">
     <a href="index.html">Home</a>
     <a href="directory.html">Directory</a>
-    <a href="discover.html">Discover</a>
+    <a href="discover.html" class="active">Discover</a>
     <a href="join.html">Join</a>
   </nav>
 
   <main>
-    <h1>Thank You</h1>
+    <h1>Discover Lagos</h1>
 
-    <section class="thankyou-card">
-      <h2>Application Received</h2>
-      <p>Thank you for applying to join the Lagos Chamber of Commerce. Below is the information you submitted:</p>
-
-      <div id="submitted-info"></div>
-
-      <a href="index.html" class="return-link">Return Home</a>
+    <section class="visitor-message">
+      <h2>Visitor Information</h2>
+      <p id="visit-message"></p>
     </section>
+
+    <section class="discover-intro">
+      <h2>Explore the City</h2>
+      <p>
+        Lagos is Nigeria's commercial capital, known for business, culture, tourism, technology, and entertainment.
+        Explore some important locations that make Lagos attractive to residents, visitors, and chamber members.
+      </p>
+    </section>
+
+    <section id="discover-cards" class="discover-grid" aria-label="Lagos places of interest"></section>
   </main>
 
   <footer>
