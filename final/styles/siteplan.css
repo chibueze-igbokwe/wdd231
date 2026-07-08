@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f7f9fb;
+  color: #222222;
+  line-height: 1.6;
+}
+
+header,
+footer {
+  background-color: #0f4c5c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  background-color: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 6px solid #0f4c5c;
+}
+
+h1,
+h2,
+h3 {
+  color: #0f4c5c;
+}
+
+header h1,
+footer p {
+  color: white;
+}
+
+.color-card {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.primary {
+  background-color: #0f4c5c;
+  color: white;
+}
+
+.secondary {
+  background-color: #f4a261;
+  color: #111111;
+}
+
+.background {
+  background-color: #f7f9fb;
+  color: #222222;
+  border: 1px solid #ccc;
+}
+
+.text {
+  background-color: #222222;
+  color: white;
+}
+
+.wireframe {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.wireframe div {
+  border: 2px solid #222222;
+  background-color: white;
+  color: #222222;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.mobile-wireframe {
+  max-width: 320px;
+}
+
+.desktop-wireframe {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.desktop-wireframe .wide {
+  grid-column: 1 / -1;
+}
+
+.hero-box {
+  min-height: 120px;
+}
