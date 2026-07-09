@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0f4c5c;
+  --secondary: #2d6a4f;
+  --accent: #f4a261;
+  --background: #f7f9fb;
+  --surface: #ffffff;
+  --text: #222222;
+  --border: #d9d9d9;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand img {
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.brand span {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+#menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "✕";
+}
+
+nav {
+  display: none;
+  background-color: #1b1b1b;
+}
+
+nav.open {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--accent);
+  color: #111111;
+}
+
+main {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero {
+  background-color: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 1.25rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero h1 {
+  color: var(--primary);
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.hero p {
+  font-size: 1.05rem;
+}
+
+.cta {
+  display: inline-block;
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.85rem 1.1rem;
+  border-radius: 8px;
+}
+
+.cta:hover {
+  background-color: var(--accent);
+  color: #111111;
+}
+
+.hero-card,
+.feature-card,
+.info-grid article {
+  background-color: #eef6f7;
+  border-left: 6px solid var(--secondary);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.hero-card h2,
+.section-heading h2,
+.feature-card h3,
+.info-grid h2 {
+  color: var(--primary);
+}
+
+.section-heading {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.features {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: var(--accent);
+}

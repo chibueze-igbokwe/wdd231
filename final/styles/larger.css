@@ -1,0 +1,39 @@
+@media screen and (min-width: 700px) {
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav a {
+    min-width: 170px;
+  }
+
+  .hero {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.75rem;
+  }
+
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 1rem;
+  }
+}
