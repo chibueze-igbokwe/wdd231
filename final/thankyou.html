@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Report Submitted | SafeTrack HSE Portal</title>
+  <meta name="description" content="Confirmation page for a SafeTrack workplace incident report submission.">
+  <meta name="author" content="Chibueze Igbokwe">
+
+  <meta property="og:title" content="Report Submitted | SafeTrack HSE Portal">
+  <meta property="og:description" content="Your SafeTrack workplace incident report has been submitted successfully.">
+  <meta property="og:image" content="https://chibueze-igbokwe.github.io/wdd231/final/images/logo.svg">
+  <meta property="og:url" content="https://chibueze-igbokwe.github.io/wdd231/final/thankyou.html">
+
+  <link rel="icon" href="images/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="SafeTrack HSE Portal logo" width="56" height="56">
+      <span>SafeTrack HSE Portal</span>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu"></button>
+  </header>
+
+  <nav id="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+    <a href="report.html">Report Incident</a>
+  </nav>
+
+  <main>
+    <section class="thankyou-panel">
+      <h1>Incident Report Submitted</h1>
+      <p>Thank you for submitting your report. The information below was received from your form.</p>
+
+      <div id="report-summary"></div>
+
+      <a href="report.html" class="cta">Submit Another Report</a>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p>&copy; <span id="currentyear"></span> SafeTrack HSE Portal</p>
+      <p>Chibueze Igbokwe | WDD 231</p>
+    </div>
+
+    <div>
+      <p><a href="attributions.html">Attributions</a></p>
+      <p><a href="#">Video Demonstration</a></p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

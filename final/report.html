@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Report an Incident | SafeTrack HSE Portal</title>
+  <meta name="description" content="Submit a workplace incident, unsafe act, unsafe condition, or near miss report through the SafeTrack HSE Portal.">
+  <meta name="author" content="Chibueze Igbokwe">
+
+  <meta property="og:title" content="Report an Incident | SafeTrack HSE Portal">
+  <meta property="og:description" content="Use SafeTrack to report workplace incidents, hazards, unsafe acts, and near misses quickly and clearly.">
+  <meta property="og:image" content="https://chibueze-igbokwe.github.io/wdd231/final/images/logo.svg">
+  <meta property="og:url" content="https://chibueze-igbokwe.github.io/wdd231/final/report.html">
+
+  <link rel="icon" href="images/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/dates.js" defer></script>
+  <script src="scripts/report.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <img src="images/logo.svg" alt="SafeTrack HSE Portal logo" width="56" height="56">
+      <span>SafeTrack HSE Portal</span>
+    </div>
+
+    <button id="menu" aria-label="Open navigation menu"></button>
+  </header>
+
+  <nav id="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="resources.html">Resources</a>
+    <a href="report.html" class="active">Report Incident</a>
+  </nav>
+
+  <main>
+    <h1>Report an Incident</h1>
+
+    <div class="report-layout">
+      <section class="report-form-card">
+        <h2>Incident Report Form</h2>
+        <p>Use this form to report incidents, near misses, unsafe acts, or unsafe conditions.</p>
+
+        <form method="get" action="thankyou.html" id="incident-form">
+          <label>
+            Reporter Name
+            <input type="text" id="reporter" name="reporter" title="Enter your full name" autocomplete="name" required>
+          </label>
+
+          <label>
+            Email Address
+            <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="name@example.com" required>
+          </label>
+
+          <label>
+            Department
+            <input type="text" id="department" name="department" title="Enter your department" autocomplete="organization" required>
+          </label>
+
+          <label>
+            Incident Type
+            <select name="incidenttype" title="Select the type of incident" required>
+              <option value="">Select an incident type</option>
+              <option value="Near Miss">Near Miss</option>
+              <option value="Unsafe Act">Unsafe Act</option>
+              <option value="Unsafe Condition">Unsafe Condition</option>
+              <option value="Injury">Injury</option>
+              <option value="Environmental Incident">Environmental Incident</option>
+              <option value="Property Damage">Property Damage</option>
+            </select>
+          </label>
+
+          <label>
+            Severity
+            <select name="severity" title="Select the incident severity" required>
+              <option value="">Select severity</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+              <option value="Critical">Critical</option>
+            </select>
+          </label>
+
+          <label>
+            Date of Incident
+            <input type="date" name="incidentdate" title="Select the date of incident" required>
+          </label>
+
+          <label>
+            Location
+            <input type="text" name="location" title="Enter the incident location" autocomplete="off" required>
+          </label>
+
+          <label>
+            Was anyone injured?
+            <select name="injury" title="Select whether anyone was injured" required>
+              <option value="">Select an option</option>
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+          </label>
+
+          <label>
+            Incident Description
+            <textarea name="description" title="Describe what happened" rows="6" required></textarea>
+          </label>
+
+          <input type="hidden" id="submitted" name="submitted">
+
+          <input type="submit" value="Submit Incident Report">
+        </form>
+      </section>
+
+      <aside class="report-help-card">
+        <h2>What Should Be Reported?</h2>
+        <ul>
+          <li>Injuries and first aid cases</li>
+          <li>Near misses</li>
+          <li>Unsafe acts or behaviors</li>
+          <li>Unsafe conditions</li>
+          <li>Spills or environmental incidents</li>
+          <li>Equipment damage or failure</li>
+        </ul>
+
+        <h3>Severity Guide</h3>
+        <p><strong>Low:</strong> Minor issue with limited impact.</p>
+        <p><strong>Medium:</strong> Could cause injury or operational disruption.</p>
+        <p><strong>High:</strong> Serious hazard requiring urgent action.</p>
+        <p><strong>Critical:</strong> Life-threatening or major incident.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <p>&copy; <span id="currentyear"></span> SafeTrack HSE Portal</p>
+      <p>Chibueze Igbokwe | WDD 231</p>
+    </div>
+
+    <div>
+      <p><a href="attributions.html">Attributions</a></p>
+      <p><a href="#">Video Demonstration</a></p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

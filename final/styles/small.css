@@ -267,3 +267,79 @@ dialog {
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.65);
 }
+
+.report-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.report-form-card,
+.report-help-card,
+.thankyou-panel {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.report-form-card {
+  border-left: 6px solid var(--primary);
+}
+
+.report-help-card {
+  border-left: 6px solid var(--secondary);
+}
+
+.report-form-card h2,
+.report-help-card h2,
+.report-help-card h3,
+.thankyou-panel h1 {
+  color: var(--primary);
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+}
+
+input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--accent);
+  color: #111111;
+}
+
+.thankyou-panel {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+#report-summary {
+  background-color: #eef6f7;
+  border-left: 6px solid var(--secondary);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
