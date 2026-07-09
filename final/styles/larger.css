@@ -45,4 +45,8 @@
   grid-template-columns: 2fr 1fr;
   align-items: start;
  }
+
+ .incident-grid {
+  grid-template-columns: repeat(3, 1fr);
+ }
 }

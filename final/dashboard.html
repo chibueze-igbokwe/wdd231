@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Report Submitted | SafeTrack HSE Portal</title>
-  <meta name="description" content="Confirmation page for a SafeTrack workplace incident report submission.">
+  <title>Incident Dashboard | SafeTrack HSE Portal</title>
+  <meta name="description" content="View submitted workplace incident reports stored in the SafeTrack HSE Portal dashboard.">
   <meta name="author" content="Chibueze Igbokwe">
 
-  <meta property="og:title" content="Report Submitted | SafeTrack HSE Portal">
-  <meta property="og:description" content="Your SafeTrack workplace incident report has been submitted successfully.">
+  <meta property="og:title" content="SafeTrack Incident Dashboard">
+  <meta property="og:description" content="Review locally saved incident reports and view report details in the SafeTrack HSE Portal.">
   <meta property="og:image" content="https://chibueze-igbokwe.github.io/wdd231/final/images/logo.svg">
-  <meta property="og:url" content="https://chibueze-igbokwe.github.io/wdd231/final/thankyou.html">
+  <meta property="og:url" content="https://chibueze-igbokwe.github.io/wdd231/final/dashboard.html">
 
   <link rel="icon" href="images/logo.svg">
 
@@ -25,7 +25,7 @@
 
   <script src="scripts/navigation.js" defer></script>
   <script src="scripts/dates.js" defer></script>
-  <script src="scripts/thankyou.js" defer></script>
+  <script src="scripts/dashboard.js" defer></script>
 </head>
 
 <body>
@@ -42,18 +42,27 @@
     <a href="index.html">Home</a>
     <a href="resources.html">Resources</a>
     <a href="report.html">Report Incident</a>
-    <a href="dashboard.html">Dashboard</a>
+    <a href="dashboard.html" class="active">Dashboard</a>
   </nav>
 
   <main>
-    <section class="thankyou-panel">
-      <h1>Incident Report Submitted</h1>
-      <p>Thank you for submitting your report. The information below was received from your form.</p>
+    <h1>Incident Dashboard</h1>
 
-      <div id="report-summary"></div>
-
-      <a href="report.html" class="cta">Submit Another Report</a>
+    <section class="dashboard-summary">
+      <h2>Saved Incident Reports</h2>
+      <p>
+        This dashboard displays incident reports saved in this browser using localStorage.
+      </p>
+      <p><strong>Total Reports:</strong> <span id="report-count">0</span></p>
+      <button type="button" id="clear-reports">Clear Reports</button>
     </section>
+
+    <section id="incident-list" class="incident-grid" aria-label="Saved incident reports"></section>
+
+    <dialog id="incident-modal">
+      <div id="incident-modal-content"></div>
+      <button type="button" id="close-incident-modal">Close</button>
+    </dialog>
   </main>
 
   <footer>

@@ -343,3 +343,56 @@ input[type="submit"]:hover {
   padding: 1rem;
   margin-bottom: 1rem;
 }
+
+.dashboard-summary,
+.incident-card,
+.empty-dashboard {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.dashboard-summary {
+  border-left: 6px solid var(--primary);
+  margin-bottom: 1rem;
+}
+
+.dashboard-summary h2,
+.incident-card h2,
+.empty-dashboard h2 {
+  color: var(--primary);
+}
+
+#clear-reports,
+.incident-card button,
+#close-incident-modal {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#clear-reports:hover,
+.incident-card button:hover,
+#close-incident-modal:hover {
+  background-color: var(--accent);
+  color: #111111;
+}
+
+.incident-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.incident-card {
+  border-left: 6px solid var(--secondary);
+}
+
+.critical {
+  background-color: #5c1118;
+  color: white;
+}
