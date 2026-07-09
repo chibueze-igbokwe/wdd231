@@ -36,4 +36,8 @@
     text-align: left;
     gap: 1rem;
   }
+
+  .resources-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
 }

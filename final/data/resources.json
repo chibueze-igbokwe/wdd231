@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Near Miss Reporting",
+    "category": "Incident Prevention",
+    "riskLevel": "Medium",
+    "description": "Encourages employees to report unsafe events before they become injuries.",
+    "recommendation": "Create a simple reporting process and review near misses weekly."
+  },
+  {
+    "title": "PPE Compliance",
+    "category": "Incident Prevention",
+    "riskLevel": "High",
+    "description": "Focuses on the correct use of personal protective equipment in work areas.",
+    "recommendation": "Train workers, inspect PPE condition, and enforce usage requirements."
+  },
+  {
+    "title": "Housekeeping Inspection",
+    "category": "Workplace Inspection",
+    "riskLevel": "Medium",
+    "description": "Helps identify blocked walkways, spills, waste buildup, and unsafe storage.",
+    "recommendation": "Conduct routine inspections and assign corrective actions immediately."
+  },
+  {
+    "title": "Fire Extinguisher Checks",
+    "category": "Workplace Inspection",
+    "riskLevel": "High",
+    "description": "Ensures fire extinguishers are accessible, inspected, and ready for use.",
+    "recommendation": "Check pressure gauges, access routes, inspection tags, and locations monthly."
+  },
+  {
+    "title": "Emergency Evacuation Drill",
+    "category": "Emergency Response",
+    "riskLevel": "High",
+    "description": "Tests employee readiness during fire, chemical release, or emergency evacuation.",
+    "recommendation": "Conduct drills regularly and document lessons learned after each exercise."
+  },
+  {
+    "title": "First Aid Readiness",
+    "category": "Emergency Response",
+    "riskLevel": "Medium",
+    "description": "Ensures first aid kits, trained first aiders, and emergency contacts are available.",
+    "recommendation": "Inspect first aid boxes monthly and refresh first aider training."
+  },
+  {
+    "title": "Chemical Spill Response",
+    "category": "Emergency Response",
+    "riskLevel": "High",
+    "description": "Provides guidance for controlling and reporting chemical spills safely.",
+    "recommendation": "Provide spill kits, SDS access, and spill response training."
+  },
+  {
+    "title": "Waste Segregation",
+    "category": "Environmental Management",
+    "riskLevel": "Medium",
+    "description": "Supports proper separation of general, recyclable, hazardous, and medical waste.",
+    "recommendation": "Use labeled bins and train staff on correct waste disposal practices."
+  },
+  {
+    "title": "Energy Conservation",
+    "category": "Environmental Management",
+    "riskLevel": "Low",
+    "description": "Promotes efficient use of energy to reduce operating costs and emissions.",
+    "recommendation": "Switch off unused equipment and monitor high-energy processes."
+  },
+  {
+    "title": "Water Conservation",
+    "category": "Environmental Management",
+    "riskLevel": "Low",
+    "description": "Encourages responsible water use and quick repair of leaks.",
+    "recommendation": "Track water usage and inspect for leaks during routine facility checks."
+  },
+  {
+    "title": "Toolbox Talk Planning",
+    "category": "Training",
+    "riskLevel": "Low",
+    "description": "Helps supervisors deliver short safety discussions before work begins.",
+    "recommendation": "Keep talks brief, practical, and focused on current workplace hazards."
+  },
+  {
+    "title": "Manual Handling Safety",
+    "category": "Training",
+    "riskLevel": "Medium",
+    "description": "Reduces injuries caused by poor lifting, carrying, pushing, or pulling methods.",
+    "recommendation": "Train employees on safe lifting and provide mechanical aids where needed."
+  },
+  {
+    "title": "Working at Height",
+    "category": "Incident Prevention",
+    "riskLevel": "High",
+    "description": "Covers controls for ladders, scaffolds, fall protection, and elevated work.",
+    "recommendation": "Use fall prevention controls and inspect equipment before use."
+  },
+  {
+    "title": "Machine Guarding",
+    "category": "Workplace Inspection",
+    "riskLevel": "High",
+    "description": "Ensures moving machine parts are guarded to prevent contact injuries.",
+    "recommendation": "Inspect guards regularly and stop equipment when guards are missing."
+  },
+  {
+    "title": "Permit to Work",
+    "category": "Incident Prevention",
+    "riskLevel": "High",
+    "description": "Controls high-risk tasks such as hot work, confined space entry, and electrical work.",
+    "recommendation": "Verify approvals, hazards, controls, and close-out before work starts."
+  }
+]

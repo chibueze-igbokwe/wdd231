@@ -174,3 +174,96 @@ footer a {
 footer a:hover {
   color: var(--accent);
 }
+
+.resource-intro {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--primary);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.resource-intro h2 {
+  color: var(--primary);
+}
+
+.resource-intro label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 700;
+}
+
+.resource-intro select {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.resources-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.resource-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.resource-card h2 {
+  color: var(--primary);
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+.resource-card button,
+#close-modal {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.resource-card button:hover,
+#close-modal:hover {
+  background-color: var(--accent);
+  color: #111111;
+}
+
+.risk {
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.low {
+  background-color: #d8f3dc;
+  color: #1b4332;
+}
+
+.medium {
+  background-color: #fff3cd;
+  color: #5c4600;
+}
+
+.high {
+  background-color: #f8d7da;
+  color: #5c1118;
+}
+
+dialog {
+  max-width: 520px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.65);
+}
