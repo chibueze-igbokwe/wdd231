@@ -1,3 +1,8 @@
+import {
+  getRiskClass,
+  filterResourcesByCategory
+} from "./resource-utils.js";
+
 const resourcesContainer = document.querySelector("#resources-container");
 const categoryFilter = document.querySelector("#category-filter");
 const resourceCount = document.querySelector("#resource-count");
@@ -6,10 +11,6 @@ const modalContent = document.querySelector("#modal-content");
 const closeModalButton = document.querySelector("#close-modal");
 
 let resources = [];
-
-function getRiskClass(riskLevel) {
-  return riskLevel.toLowerCase().replace(" ", "-");
-}
 
 function openResourceModal(resource) {
   modalContent.innerHTML = `
@@ -25,7 +26,6 @@ function openResourceModal(resource) {
 
 function displayResources(resourceList) {
   resourcesContainer.innerHTML = "";
-
   resourceCount.textContent = `${resourceList.length} resources displayed`;
 
   resourceList.forEach((resource) => {
@@ -35,7 +35,12 @@ function displayResources(resourceList) {
     card.innerHTML = `
       <h2>${resource.title}</h2>
       <p><strong>Category:</strong> ${resource.category}</p>
-      <p><strong>Risk Level:</strong> <span class="risk ${getRiskClass(resource.riskLevel)}">${resource.riskLevel}</span></p>
+      <p>
+        <strong>Risk Level:</strong>
+        <span class="risk ${getRiskClass(resource.riskLevel)}">
+          ${resource.riskLevel}
+        </span>
+      </p>
       <p>${resource.description}</p>
       <button type="button">View Details</button>
     `;
@@ -51,9 +56,10 @@ function displayResources(resourceList) {
 function filterResources() {
   const selectedCategory = categoryFilter.value;
 
-  const filteredResources = selectedCategory === "all"
-    ? resources
-    : resources.filter((resource) => resource.category === selectedCategory);
+  const filteredResources = filterResourcesByCategory(
+    resources,
+    selectedCategory
+  );
 
   localStorage.setItem("safetrack-category", selectedCategory);
   displayResources(filteredResources);
@@ -77,8 +83,13 @@ async function getResources() {
 
     filterResources();
   } catch (error) {
-    resourcesContainer.innerHTML = "<p>Safety resources could not be loaded.</p>";
-    console.error(error);
+    resourcesContainer.innerHTML = `
+      <p class="error-message">
+        Safety resources could not be loaded. Please try again later.
+      </p>
+    `;
+
+    console.error("Resource loading error:", error);
   }
 }
 
